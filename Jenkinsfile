@@ -9,7 +9,8 @@ pipeline {
     dir('real_estate') {
       sh "pwd"
         sh "npm install"
-        sh "npm start"
+        sh "npm install -g serve"
+        sh "serve -s build"
     }
     sh "pwd"
 } 
